@@ -1,0 +1,19 @@
+name: 'Discord Webhook Notification'
+description: 'Post a message to a Discord webhook'
+inputs:
+  github-context:
+    description: 'Output of ran tests'
+    required: true
+  hook-url:
+    description: 'Url of Discord webhook'
+    required: true
+  test-results:
+    description: 'Results of ran tests'
+    required: true
+  
+output:
+  status: 'The status of post request'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
