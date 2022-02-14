@@ -1,6 +1,6 @@
 {
   "name": "github-discord-test-report-action",
-  "version": "0.1.0",
+  "version": "0.3",
   "description": "Post a message using Discord webhook about Github CI test",
   "main": "index.js",
   "scripts": {

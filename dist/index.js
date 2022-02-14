@@ -34505,8 +34505,8 @@ try {
 		  "color": 16448250,
 		  "author": {
 			"name": user,
-			"url": userPFP,
-			"icon_url": `${githubServer}/${user}.png`
+			"url": `${githubServer}/${user}`,
+			"icon_url": userPFP,
 		  },
 		  "footer": {
 			"text": "GitHub Actions Discord Notification",
