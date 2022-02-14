@@ -1,6 +1,5 @@
-//test
 const core = require('@actions/core');
-const github = require('@actions/github');
+// const github = require('@actions/github');
 const requestModule = require('request');
 
 try {
@@ -19,7 +18,7 @@ try {
 		{
 		  "title": "GitHub action",
 		  "description": `${user} triggered GitHub action with \`${githubContext.event_name.toUpperCase()}\` in ${repositoryUrl}\n	\`\`\`\n${results}\n\`\`\``,
-		  "url": `${repositoryUrl}/actions/runs/${github.run_id}`,
+		  "url": `${repositoryUrl}/actions/runs/${githubContext.run_id}`,
 		  "color": 16448250,
 		  "author": {
 			"name": user,
